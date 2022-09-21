@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+	int i=0;
+	scanf("%d",&i);//赋予i的值
+	switch(i)//判断（）里i的值
+	{
+		case 1://根据（）里进行分支选择
+			printf("选择远方\n");
+			break;
+		case 2:
+			printf("离开家乡\n");
+			break;
+		case 3:
+			printf("回到家乡\n");
+		default:
+			break;
+	}
+	return 0;
+}
