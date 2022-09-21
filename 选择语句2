@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int a=0;
+	printf("从今天开始学习\n");
+	printf("学习有三个选择(\n1\n2\n3\n)\n");
+	scanf("%d",&a);
+	if (a==1)
+		printf("考上本科\n");
+	else if(a==2)
+		printf("考上大专\n");
+	else
+		printf("回家继承家业\n");
+
+	return 0;
+}
