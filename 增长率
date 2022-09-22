@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+	float p=1;//定义p双精度类型
+	float a=0.07;//定义a双精度类型
+	int n=1;//定义n为整型
+	while(n<=10)
+	{
+	  p=p*(1+a);
+	    n++;
+	}
+	printf("10年后增长了%.3f\n",p);//精确到3位小数
+	return 0;
+}
+
+
+或者  单精度不能自动转化为双精度，所以定义p为双精度类型
+
+
+#include <stdio.h>
+int main()
+{
+	double p=1;//定义p双精度类型
+	int n=1;//定义n为整型
+	while(n<=10)
+	{
+	  p=p*(1+0.07);
+	    n++;
+	}
+	printf("10年后增长了%.3f\n",p);//精确到3位小数
+	return 0;
+}
