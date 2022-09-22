@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+	int ca=0;//定义整型
+	int ch=0;//定义整型
+	char password[20]={0};//定义一个字符串
+	printf("请输入密码:>");
+	scanf("%s",password);//输入密码存放在password中
+    //缓冲区还剩一个'\n'
+	//读取一下'\n'
+	while(ch=getchar() !='\n')//循环读取，直到不等于'\n'
+	{
+		;
+	}
+	printf("请确认:(Y/N)>");
+	ca=getchar();
+	if (ca == 'Y' )
+		printf("确认输入\n");
+	   else
+		printf("放弃输入\n");
+	return 0;
+}
